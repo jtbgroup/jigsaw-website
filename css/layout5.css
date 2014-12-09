@@ -36,44 +36,42 @@ h1 {
 }
 
 nav {
-	/*    width:77%;*/
+	width: 100%;
+	display: table;
 	height: 40px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	background: #555353;
 	border: 1px solid #151515;
-	/*    position:absolute;*/
 }
 
 nav ul {
 	list-style-image: none;
 	list-style-position: outside;
 	list-style-type: none;
-	padding-left: 10px;
-	/*    margin:0 auto;
-        width:940px;*/
+	display: table-row;
 }
 
 nav ul li {
-	float: left;
+	display: table-cell;
+	text-align: left;
+	padding-left: 20px;
 }
 
 nav ul li a {
-	margin-right: 20px;
 	display: block;
 	line-height: 40px;
-	background: url('../images/puzzle_20.png') no-repeat left center ;
-	background-size: 20px 20px ;
+	background: url('../images/puzzle_20.png') no-repeat left center;
+	background-size: 20px 20px;
 	padding-left: 24px;
 }
 
 nav ul li a:hover {
-	margin-right: 20px;
 	display: block;
 	line-height: 40px;
-	background: url('../images/puzzle_alt_20.png') no-repeat left center ;
-	background-size: 20px 20px ;
+	background: url('../images/puzzle_alt_20.png') no-repeat left center;
+	background-size: 20px 20px;
 	padding-left: 24px;
 }
 
