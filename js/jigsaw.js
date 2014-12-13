@@ -2,7 +2,6 @@ function loadContent(menuId) {
 	document.getElementById('site_article_section').style.height = "auto";
 	$('#site_article_section').load('./pages/' + menuId + '.html', null,
 			function() {
-//				adaptContentHeight();
 			});
 }
 
