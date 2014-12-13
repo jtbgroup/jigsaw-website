@@ -19,6 +19,7 @@ function adaptContentHeight() {
 	var menuh = document.getElementById('site_menu').offsetHeight;
 	var footerh = document.getElementById('site_footer').offsetHeight;
 	var divh = newArticleHeight - headerh - menuh - footerh;
+	
 	if (articleh < divh) {
 		document.getElementById('site_article_section').style.height = divh
 				+ "px"
