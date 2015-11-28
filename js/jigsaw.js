@@ -32,7 +32,7 @@ function loadDefaultPage() {
 	var url = window.location;
 	var anchor = url.hash; // anchor with the # character
 	var anchor2 = url.hash.substring(1); // anchor without the # character
-	if (anchor) {
+	if (anchor != null) {
 		loadContent(anchor2);
 	} else {
 		loadContent('home');
