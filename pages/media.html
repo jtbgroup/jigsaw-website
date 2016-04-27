@@ -1,11 +1,67 @@
-<div class="img">
-	<a href="#mediaband" onclick="javascript:loadContent('mediaband')"> <img
-		src="images/band/theband02.jpg" alt="" width="110" height="90"></a>
-	<div class="desc">The band</div>
-</div>
+<table class="album_table">
+	<!-- Photos -->
+	<tr>
+		<td colspan="2" class="news_header">Photo albums</td>
+	</tr>
 
-<div class="img">
-	<a href="#mediafulmar" onclick="javascript:loadContent('mediafulmar')"><img src="images/fulmar.jpg" alt=""
-		width="110" height="90"></a>
-	<div class="desc">Fulmar showcase</div>
-</div>
+
+	<tr>
+		<td><a href="#mediapicturesfulmar" onclick="javascript:loadContent('mediapicturesfulmar')"><img class="displayed_center" src="images/Fulmar/Fulmar02.jpg" width="61" height="61" alt="" /></a></td>
+		<td class="album_cell"><a href="#mediapicturesfulmar" onclick="javascript:loadContent('mediapicturesfulmar')">Live @ Fulmar 1913 - 29 Nov 2014</a><br> 
+		<font size="1">&copy; D. Cammaert & O. Tingvoll</font><br>
+	<!-- 	<a href="#mediapicturesfulmar" onclick="javascript:loadContent('mediapicturesfulmar')">
+		<img src="images/gallery_128x128.png" alt="See Gallery" width="32px" /></a> -->
+		</td>
+	</tr>
+
+	<tr>
+		<td><a href="#mediapicturesband" onclick="javascript:loadContent('mediapicturesband')"><img class="displayed_center" src="images/band/theband02.jpg" width="61" height="61" alt="" /></a></td>
+		<td class="album_cell"><a href="#mediapicturesband" onclick="javascript:loadContent('mediapicturesband')">Photo session @ W Studio - Oct '14</a><br> 
+		<font size="1">&copy; O. Tingvoll & M. Vdk</font><br>
+	<!-- 	<a href="#mediapicturesband" onclick="javascript:loadContent('mediapicturesband')">
+		<img src="images/gallery_128x128.png" alt="See Gallery" width="32px" /></a> -->
+		</td>
+	</tr>
+
+
+<!-- 	<tr> -->
+<!-- 		<td><img class="displayed_center" -->
+<!-- 			src="images/albums/jburnin3.jpg" width="61" height="61" alt="" /></td> -->
+<!-- 		<td class="album_cell">Studio recording showcase.</td> -->
+<!-- 	</tr> -->
+
+	<!-- Videos -->
+	<tr>
+		<td colspan="2" class="news_header">Videos</td>
+	</tr>
+
+<!--
+	<tr>
+		<td><a href="#mediavideofulmar" onclick="javascript:loadContent('mediavideofulmar')"><img class="displayed_center" src="images/flyers/flyerfulmar.png" width="61" height="61" alt="" /></a></td>
+		<td class="album_cell"><a href="#mediavideofulmar" onclick="javascript:loadContent('mediavideofulmar')">Live @ Fulmar 1913 - 29 Nov 2014</a><br> 
+
+		</td>
+	</tr>
+
+-->
+
+	<tr>
+		<td><a class='youtube'
+			href="http://www.youtube.com/embed/ycPFj8FU-A4?rel=0&amp;wmode=transparent"><img class="displayed_center" src="images/yousc.jpg" width="61" height="61" alt="" /></a></td>
+		<td class="album_cell"><a class='youtube' href="http://www.youtube.com/embed/ycPFj8FU-A4?rel=0&amp;wmode=transparent">You - New single released in February 2016</a></a><br> 
+
+		</td>
+	</tr>
+
+
+</table>
+
+
+<script>
+	$(".youtube").colorbox({
+		opacity : 0.6,
+		iframe : true,
+		innerWidth : 640,
+		innerHeight : 390
+	});
+</script>
