@@ -1,65 +1,276 @@
-.container {
-    padding: 80px 120px;
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: #777;
 }
 
-.member {
-    border: 5px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
+h3, h4 {
+	margin: 10px 0 30px 0;
+	letter-spacing: 10px;
+	font-size: 25px;
+	color: #2e3436;
+	font-weight: bold;
 }
-.member:hover {
-    border-color: #f57900;
+
+.container {
+	padding: 80px 0px;
+}
+
+.person {
+	border: 5px solid transparent;
+	margin-bottom: 25px;
+	width: 80%;
+	height: 80%;
+	opacity: 0.7;
+}
+
+.person:hover {
+	border-color: #f57900;
+	opacity: 0.9;
 }
 
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
-    margin: auto;
+/* 	-webkit-filter: grayscale(90%); */
+/* 	filter: grayscale(90%); make all photos black and white */
+	width: 100%; /* Set width to 100% */
+	margin: auto;
 }
+
+/* .carousel-media img{ */
+/* 	-webkit-filter: grayscale(0%); */
+/* 	filter: grayscale(0%);  */
+/* } */
 
 .carousel-caption h3 {
-    color: #fff !important;
+	color: #fff !important;
 }
 
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
+@media ( max-width : 600px) {
+	.carousel-caption {
+		display: none;
+		/* Hide the carousel text when the screen is less than 600 pixels wide */
+	}
 }
 
 
+.bg-media {
+	background-image: url('../imgs/bkg_media.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: #2e3436;
+}
 
- /* Add a dark background color with a little bit see-through */
+.bg-media h3 {
+	color: #2e3436;
+}
+
+.bg-media p {
+	font-style: italic;
+}
+
+.bg-disco {
+	/*       background: #2d2d30; */
+	background-image: url('../imgs/bkg_disco.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: #ffffff;
+}
+
+.bg-disco h3 {
+	color: #fff;
+}
+
+.bg-disco p {
+	font-style: italic;
+}
+
+.list-group-item:first-child {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.thumbnail {
+	padding: 10 10 15px 10;
+	border: none;
+	border-radius: 10;
+}
+
+.thumbnail-media {
+	padding: 0 0 0 0;
+	border: #2e3436 2px solid  ;
+	border-radius: 10;
+}
+
+.thumbnail p {
+	margin-top: 15px;
+	color: #555;
+}
+
+.btn {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #f1f1f1;
+	border-radius: 0;
+	transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+	border: 1px solid #333;
+	background-color: #fff;
+	color: #000;
+}
+
+
+.nav-tabs li a {
+	color: #777;
+}
+
+
 .navbar {
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity:0.9;
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	background-color: #2d2d30;
+	border: 0;
+	font-size: 11px !important;
+	letter-spacing: 4px;
+	opacity: 0.9;
 }
 
-/* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+	color: #d5d5d5 !important;
 }
 
-/* On hover, the links will turn white */
 .navbar-nav li a:hover {
-    color: #fff !important;
+	color: #fff !important;
 }
 
-/* The active link */
 .navbar-nav li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
+	color: #f57900 !important;
+	background-color: #29292c !important;
 }
 
-/* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
-    border-color: transparent;
+	border-color: transparent;
 }
 
+.open .dropdown-toggle {
+	color: #fff;
+	background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+	color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+	background-color: red !important;
+}
+
+footer {
+	background-color: #2d2d30;
+	color: #f5f5f5;
+	padding: 32px;
+}
+
+footer h3{
+	color: #f5f5f5;
+}
+
+.container-footer{
+	padding: 10px;
+}
+
+footer a {
+	color: #f5f5f5;
+}
+
+footer a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+ul.social-buttons li a {
+  display: block;
+  background-color: #d3d7cf;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: #222222;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+ul.social-buttons li a:hover{
+  color: #f57900;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+header {
+	background-image: url('../imgs/bkg_banner.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: #f57900;
+}
+
+header .intro-text {
+	padding-top: 200px;
+	padding-bottom: 0px;
+}
+
+header .intro-text .intro-lead-in {
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom: 25px;
+}
+
+footer span.copyright {
+/*   line-height: 40px; */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+  vertical-align: text-bottom;
+}
